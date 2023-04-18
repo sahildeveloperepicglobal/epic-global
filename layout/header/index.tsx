@@ -7,7 +7,7 @@ const Header = () => {
 
   useEffect(() => {
     function handleScroll() {
-      if (window.pageYOffset > 100) {
+      if (window.pageYOffset > 0) {
         setScroll(true);
       } else {
         setScroll(false);
@@ -25,7 +25,7 @@ const Header = () => {
     <div
       className={`${
         scroll ? "scroll" : ""
-      } absolute header top-0 z-10 w-[100%]`}
+      } absolute header top-0 z-10 w-[100%] `}
     >
       <div className="container mx-auto">
         <div className="flex justify-between items-center pt-4 pb-4">
