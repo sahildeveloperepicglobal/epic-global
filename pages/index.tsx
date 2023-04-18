@@ -217,7 +217,7 @@ export default function Home() {
                       <img src={items.url} alt="{items.title}" />
                     </div>
                     <div className="content">
-                      <h3 className="text-2xl  mb-3 line-clamp-6">
+                      <h3 className="text-2xl text-[#333]  mb-3 line-clamp-6">
                         {items.title}
                       </h3>
                       <p className="text-sm line-clamp-4 text-[#333]">
