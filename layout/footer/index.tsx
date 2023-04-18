@@ -79,7 +79,7 @@ const Footer = () => {
           <div className="w-1/4 ">
             <div className="box">
               <h3 className="text-[30px] font-semibold text-[#080b1a] mb-[16px] ">
-                quick link
+                Quick link
               </h3>
               <ul>
                 <li className="text-[15px] font-medium text-[#080b1a] mb-[5px] transition-all hover:ml-[5px]">

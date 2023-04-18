@@ -220,7 +220,9 @@ export default function Home() {
                       <h3 className="text-2xl  mb-3 line-clamp-6">
                         {items.title}
                       </h3>
-                      <p className="text-sm line-clamp-4">{items.content}</p>
+                      <p className="text-sm line-clamp-4 text-[#333]">
+                        {items.content}
+                      </p>
                     </div>
                   </div>
                 </div>
