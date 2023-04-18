@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,13 +17,93 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  overflow-x: hidden;
+}
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: (rgb(var(--background-end-rgb)));
+  font-family: "Poppins", sans-serif;
+}
+.scroll.header {
+  position: fixed;
+  background: #fff;
+  top: 0;
+  transition: all 1.5s;
+}
+
+.header .headerlogo img {
+  filter: contrast(0%) brightness(200%);
+}
+
+.scroll.header .headerlogo img {
+  filter: unset;
+}
+.header a.link {
+  color: #fff;
+}
+.scroll {
+  transition: all 1.5s;
+}
+.scroll.header a.link {
+  color: #333;
+}
+.bannerslider .image img {
+  object-fit: cover;
+}
+
+.bannerslider .image:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(0 0 0);
+  opacity: 0.9;
+}
+
+.bannerouter ul.slick-dots {
+  display: flex !important;
+  flex-direction: column;
+  width: 50px;
+  margin-left: auto;
+  margin-right: 0;
+  right: 0;
+  top: 50%;
+  gap: 15px;
+  transform: translate(-50%, 0%);
+}
+.bannerouter .slick-vertical .slick-slide {
+  border: none !important;
+}
+
+.bannerouter .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #af0202;
+}
+.bannerouter ul.slick-dots button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+.bannerouter ul.slick-dots button:before {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  position: static;
+  border: 2px solid;
+  border-radius: 50%;
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+  opacity: 1;
+}
+.slick-vertical .slick-slide {
+  border: none !important;
 }
