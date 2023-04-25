@@ -25,20 +25,25 @@ const Header = () => {
     <div
       className={`${
         scroll ? "scroll" : ""
-      } absolute header top-0 z-10 w-[100%] `}
+      } absolute header top-0 z-10 w-[100%] z-[99]`}
     >
       <div className="container mx-auto">
         <div className="flex justify-between items-center pt-4 pb-4">
           <div>
             <div className="headerlogo">
-              <img src="/img/logo.webp" alt="" />
+              <Link href="/">
+                <img src="/img/logo.webp" alt="" />
+              </Link>
             </div>
           </div>
           <div>
             <ul className="flex gap-5 ">
               {navmenu.map((nav) => (
                 <li key={nav.id}>
-                  <Link href="/" className="text-[15px] font-light link ">
+                  <Link
+                    href={nav.link}
+                    className="text-[15px] font-light link "
+                  >
                     {nav.title}
                   </Link>
                 </li>
@@ -56,32 +61,32 @@ export default Header;
 const navmenu = [
   {
     id: 1,
-    link: "./",
+    link: "business-process-services",
     title: "Business Process Services",
   },
   {
     id: 2,
-    link: "./",
+    link: "project-management",
     title: "Project Management",
   },
   {
     id: 3,
-    link: "./",
+    link: "design-evelopment",
     title: "Design & Development",
   },
   {
     id: 4,
-    link: "./",
+    link: "online-marketing",
     title: "Online Marketing",
   },
   {
     id: 5,
-    link: "./",
+    link: "carrier",
     title: "Carrier",
   },
   {
     id: 6,
-    link: "./",
+    link: "contact",
     title: "Contact Us",
   },
 ];

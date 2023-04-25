@@ -282,6 +282,65 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="pt-[50px] pb-[60px] bg-[url('/img/service-bg.jpg')]">
+        <div className="container mx-auto   mb-[30px]">
+          <div className="flex">
+            <div className="w-10/12 ">
+              <div className="text-4xl font-semibold  text-[#151515] mb-2">
+                Epic global UPDATE NEWS
+              </div>
+              <p className="text-base font-normal text-[#151515]  ">
+                Uniquely unleash client-centered relationships and world-class{" "}
+                <br /> alignments Compellingly impact premier enterprise.
+              </p>
+            </div>
+            <div className="w-2/12 flex justify-end items-start">
+              <Link
+                href="/"
+                className="text-white rounded-md px-3 py-3  box-decoration-slice bg-gradient-to-r from-[#851010] to-[#5e0a0a]"
+              >
+                All Articles{" "}
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="container  mx-auto">
+          <div className="flex gap-5 justify-center w-[100%]">
+            {bloglist.map((blog, index) => (
+              <div key={index} className="box ">
+                <div className="image">
+                  <img
+                    src={blog.image}
+                    alt={blog.title}
+                    className="h-[300px] object-cover"
+                  />
+                </div>
+                <div className="content overflow-hidden relative mt-[-70px] mx-auto    bg-white shadow-md hover:shadow-xl    pt-5 pl-5 pr-5 pb-5">
+                  <h3 className="text-lg font-bold text-[#333]  mb-3 ">
+                    {blog.title}
+                  </h3>
+                  <p className="text-base mb-3 text-[#707070] w-2/3">
+                    {blog.title}{" "}
+                  </p>
+
+                  <Link
+                    href={blog.link}
+                    className="flex justify-center items-center rounded-md px-3 py-3  box-decoration-slice bg-gradient-to-r from-[#851010] to-[#5e0a0a] w-[100px] h-[40px] "
+                  >
+                    <img
+                      src="/svg/arrow-right-double-line.svg"
+                      alt="right double line"
+                      className="w-[20px]"
+                    />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
@@ -351,6 +410,37 @@ const portfolio = [
     url: "/portfolio/port-4.jpg",
     title: "Product Designing",
     content: "Professionally formulate error free after B2C human it",
+    link: "/",
+  },
+];
+
+const bloglist = [
+  {
+    id: "1",
+    image: "/blog/blog1.jpg",
+    date: "September 20, 2021",
+    title: "Top 15 Secrete Business  Ideas Next Levels",
+    link: "/",
+  },
+  {
+    id: "2",
+    image: "/blog/blog2.jpg",
+    date: "September 20, 2021",
+    title: "Premium Supply Chains is Network turnkey",
+    link: "/",
+  },
+  {
+    id: "3",
+    image: "/blog/blog3.jpg",
+    date: "September 20, 2021",
+    title: "Diverse Intellectual Capital  Before Distinctive",
+    link: "/",
+  },
+  {
+    id: "4",
+    image: "/blog/blog3.jpg",
+    date: "September 20, 2021",
+    title: "Diverse Intellectual Capital  Before Distinctive",
     link: "/",
   },
 ];
