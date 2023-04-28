@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import { Inter } from "next/font/google";
@@ -5,7 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
-
+import styles from "@/styles/home.module.scss";
 import { Parallax, useParallax } from "react-scroll-parallax";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,7 +23,7 @@ export default function Home() {
     autoplay: true,
     autoplaySpeed: 5000,
   };
-
+ 
   return (
     <div className="wapper">
       <div className="bannerhome relative">
@@ -200,6 +201,121 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="containers">
+        <div className={styles.officediv}>
+          <div className={styles.picdiv}>
+            <img src="/Images/about.85b87a68.jpg" />
+          </div>
+          <div className={styles.contmain}>
+            <div className={styles.providiv}>
+              <h6>ABOUT US </h6>
+              <h2>Provide best Business Solution</h2>
+              <h4>Since 2010</h4>
+              <p>
+                <b>Businesx</b> always try to provide the best Business
+                Solutions for Clinets to grow up their Business very sharply and
+                smoothly. We voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt.
+              </p>
+              <a>
+                More Details <span>{">>"}</span>{" "}
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className={styles.bestdiv}>
+          <div className={styles.teamdiv}>
+            <img src="/Images/download.png" />
+            <div className={styles.creativ}>
+              <h2>Creative Team</h2>
+              <p>We have creative team, they always ready to help you.</p>
+            </div>
+          </div>
+          <div className={styles.teamdiv}>
+            <img src="/Images/download (1).png" />
+            <div className={styles.creativ}>
+              <h2>Best Service</h2>
+              <p>We have creative team, they always ready to help you.</p>
+            </div>
+          </div>
+          <div className={styles.teamdiv}>
+            <img src="/Images/download (2).png" />
+            <div className={styles.creativ}>
+              <h2>Online Support</h2>
+              <p>We have creative team, they always ready to help you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="containers">
+        <div className={styles.bgdiv}>
+          <div className={styles.great}>
+            <div className={styles.contediv}>
+              <h3>Creative Team</h3>
+              <h1>
+                We have great <br />
+                creative team
+              </h1>
+              <p>
+                <b>Businex</b> always try to provide the best Business Solutions
+                for Clients to grow up their Business sharp and smoothly. We
+                voluptatem voluptas aspernatur aut odit fugit, quia consequuur
+                magni dolores eos qui ratione.
+              </p>
+            </div>
+            <div className={styles.sliddiv}>
+
+
+
+
+              <div className={styles.blogs1}>
+                <img src="/Images/01.a0c47281.jpg" />
+                <div className={styles.blogs2}>
+                  <h3>Larry Ellison</h3>
+                  <h5>CEO & Founder</h5>
+                </div>
+                <div className={styles.paradiv}>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin tincidunt nunc lorem, nec faucibus mi facilisis
+                    eget....
+                  </p>
+                </div>
+              </div>
+              <div className={styles.blogs1}>
+                <img src="/Images/02.4817d3a8.jpg" />
+                <div className={styles.blogs2}>
+                  <h3>James Anderson</h3>
+                  <h5>HR & Admin</h5>
+                </div>
+                <div className={styles.paradiv}>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin tincidunt nunc lorem, nec faucibus mi facilisis
+                    eget....
+                  </p>
+                </div>
+              </div>
+              <div className={styles.blogs1}>
+                <img src="/Images/03.22822e24.jpg" />
+                <div className={styles.blogs2}>
+                  <h3>Thomas Nancy</h3>
+                  <h5>Software Engineer</h5>
+                </div>
+                <div className={styles.paradiv}>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin tincidunt nunc lorem, nec faucibus mi facilisis
+                    eget....
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
       <section className="discoversection mt-5  pt-[50px] pb-[60px] bg-[#dfe3e796]">
         <div className="container mx-auto text-center">
           <div className="text-4xl font-semibold  text-[#151515] mb-4">
@@ -231,6 +347,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section>{/* case study */}</section>
 
       <section className="portfolio   pt-[50px] pb-[60px] bg-[#fff]">
         <div className="container mx-auto text-center mb-[30px]">

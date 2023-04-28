@@ -2,9 +2,12 @@
 /* eslint-disable @next/next/no-img-element */
 
 
-import Style from "@/styles/bussiness.module.scss";
+import Style from "@/styles/business.module.scss";
+import Swiper from "swiper";
+import { SwiperSlide } from "swiper/react";
+import Slider from "./slider";
 
-const Bussiness = () => {
+const Business = () => {
   return (
     <div className={Style.maincontainer}>
       <div className={Style.head1}>
@@ -480,7 +483,7 @@ const Bussiness = () => {
       </div>
       <div className={Style.consultdiv}>
         <div className={Style.consult1}>
-          <div className={Style.jhona}>
+         <div className={Style.jhona}>
             <img src="/bussinessimage/author1.jpg" />
             <h2>Jonha Doe</h2>
             <h4>BUSINESS CONSULTANT</h4>
@@ -582,4 +585,4 @@ const Bussiness = () => {
     </div>
   );
 };
-export default Bussiness;
+export default Business;

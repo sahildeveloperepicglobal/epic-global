@@ -2,16 +2,19 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import styles from "styles/about.module.scss";
-import { Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 
 const Sliders = () => {
   return (
     <>
       <div className={styles.main}>
-        <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+        <Swiper pagination={true} autoplay={true} modules={[Pagination]} className="mySwiper">
+{/* {Swiper{
+Autoplay=true;
+}} */}
         <div className={styles.form2div}>
           <SwiperSlide>
            
@@ -42,7 +45,6 @@ const Sliders = () => {
               <div className={styles.intcomdiv}> ''</div>
               <div className={styles.paradiv}>
                 <p>
-                  {" "}
                   ELEKS has been involved in the development of a number of our
                   consumer-facing websites and mobile applications that allow
                   our customers to easily track their shipments, get the
@@ -66,7 +68,7 @@ const Sliders = () => {
               <div className={styles.intcomdiv}> ''</div>
               <div className={styles.paradiv}>
                 <p>
-                  {" "}
+                 
                   ELEKS has been involved in the development of a number of our
                   consumer-facing websites and mobile applications that allow
                   our customers to easily track their shipments, get the

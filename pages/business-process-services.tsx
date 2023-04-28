@@ -1,6 +1,6 @@
 import Breadcumb from "@/component/Breadcumb";
 import React from "react";
-import Bussiness from "./bussiness";
+import Business from "./business";
 
 const BusinessProcessServices = () => {
   return (
@@ -12,7 +12,7 @@ const BusinessProcessServices = () => {
         />
 
       </div>
-      <Bussiness/>
+      <Business/>
     </>
   );
 };

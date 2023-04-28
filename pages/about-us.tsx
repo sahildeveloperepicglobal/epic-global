@@ -299,7 +299,6 @@ const AboutUs = () => {
             </div>
           </section>
         </div>
-        {/* Aboutus div */}
       </div>
     </>
   );

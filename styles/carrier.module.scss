@@ -1,7 +1,7 @@
 .hotvacan{
     justify-content: space-between;
     display: flex;
-    margin: 60px 60px 0;
+    margin: 40px 40px 0;
     align-items: center;
     h2{
         font-size: 26px;
@@ -36,16 +36,15 @@
 }
 .vacandetail{
     background-color: #f0f0f000;
-    padding: 60px;
+    padding: 40px;
     ul{     
         display: grid;
-        grid-gap: 1.25rem;
-        grid-template-columns: repeat(auto-fill,minmax(380px,1fr));
+        grid-template-columns: repeat(3,1fr);
         li{
             box-sizing: content-box;
             box-shadow: 0px 0px 0px 0px rgba(128, 128, 128);
             cursor: pointer;
-            // transition: 0.5s;
+            margin: 10px;
             &:hover{
                 box-sizing: content-box;
                 box-shadow: 3px 3px 10px 3px rgba(128, 128, 128, 0.2);
@@ -107,4 +106,268 @@
         color: #484848;
         font-size: 12px;
     }
+}
+
+
+// vacancies page css
+
+
+.contediv{
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: 3fr minmax(250px,1fr);
+   margin: 100px;
+}
+
+.devildiv{
+    font-size: 13px;
+
+    p{
+        margin-bottom: 10px;
+        line-height: 1.5;
+    a{
+        cursor: pointer;
+        color: #0045cf;
+        border-bottom: 1px solid rgba(0,69,207,.3);
+        display: inline;
+        line-height: 1.5;
+        transition: border-color .3s;
+    }
+    }
+}
+.respon{
+    h2{
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 2;
+        letter-spacing: 1.5px;
+        margin: 0 0 26px;
+        text-transform: uppercase;
+        margin-top: 50px;
+    }
+    ul{
+        padding: 0;
+        li{
+            line-height: 1.5;
+            margin-bottom: 17px;
+            // padding-left: 35px;
+            position: relative;
+            font-size: 13px;
+            list-style: none;
+        }
+        li::before {
+            content: "o";
+    color: blue;
+    font-weight: 600;
+    display: inline-block;
+    width: 1em;
+    margin-right: 1em;
+    font-size: 12px;
+        }
+    }
+    }
+.abtdiv{
+    h2{
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 2;
+        letter-spacing: 1.5px;
+        margin: 0 0 26px;
+        text-transform: uppercase;
+        margin-top: 50px;
+        a{
+            cursor: pointer;
+            color: #0045cf;
+            border-bottom: 1px solid rgba(0,69,207,.3);
+            display: inline;
+            line-height: 1.5;
+            transition: border-color .3s;
+        }
+    }
+    p{
+        font-size: 13px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+}
+.finddiv{
+    h2{
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 2;
+        letter-spacing: 1.5px;
+        margin: 0 0 26px;
+        text-transform: uppercase;
+        margin-top: 50px;
+    }
+}
+
+.sec2div{
+    position: relative;
+}
+
+.imgsdiv{
+    // position: fixed;
+    img{
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        margin-bottom: 30px;
+    }
+    h2{
+       font-size: 16px;
+        font-weight: 600;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+    p{
+        border-bottom: 1px dashed rgba(0,69,207,.3);
+        color: #0045cf;
+        cursor: pointer;
+        display: inline-block;
+        line-height: 1.5;
+        margin-bottom: 8px;
+        padding-right: 23px;
+        font-size: 13px;
+        position: relative;
+        transition: border-color .3s;
+        &:hover{
+            border-bottom-color: #0045cf;
+        }
+    }
+    p::after{
+        border-top: 1px solid #1d3763;
+        border-left: 1px solid #1d3763;
+        content: '';
+        height: 7px;
+        position: absolute;
+        right: 5px;
+        top: 7px;
+        transform: rotate(225deg);
+        width: 7px;
+        transition-duration: .3s;
+        transition-property: transform,top;
+        top: 5px;
+        // transform: rotate(45deg);
+    }
+}
+.mailhr{
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+        a{
+            border-bottom: 1px solid rgba(0, 69, 207, 0.3);
+            color: #0045cf;
+            cursor: pointer;
+            font-size: 13px;
+            &:hover{
+                border-bottom-color: #0045cf;
+            }
+        }
+}
+.appdiv{
+    span{
+        font-size: 13px;
+ a{
+        border-bottom: 1px dashed rgba(0,69,207,.3);
+        color: #0045cf;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 13px;
+        position: relative;
+        transition: border-color .3s;
+        &:hover{
+            border-bottom-color: #0045cf;
+        }
+    }
+}
+}
+.apply{
+    cursor: pointer;
+    display: block;
+    font-size: .875rem;
+    letter-spacing: 1.8px;
+    line-height: 1.14; 
+    padding: 1.125rem 0;
+    text-align: center;
+    transition-property: background-color,color;
+    transition-duration: .3s;
+    background-color: #0045cf;
+    color: #fff;
+    margin-bottom: 18px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 20px;
+    font-weight: 500;
+    &:hover{
+        background-color: #0036a3;
+    }
+}
+.linkedin{
+    border: 2px solid #aab4c4;
+    border-radius: 0;
+    color: #323232;
+    cursor: pointer;
+    display: block;
+    font-size: .875rem;
+    letter-spacing: 1.8px;
+    line-height: 1.14;
+    outline: 0;
+    padding: 16px;
+    text-align: center;
+    transition-property: background-color,color;
+    transition-duration: .3s;
+    font-weight: 500;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-bottom: 20px;
+    &:hover{
+        background-color: #aab4c4;
+        color: #fff;
+    }
+}
+.share{
+    margin-top: 20px;
+    h2{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.1;
+        margin-bottom: 10px;
+        color: #000000c7;
+    }
+}
+.facelin{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    svg{
+        fill: rgb(59, 89, 152);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:720px){
+    .contediv{
+        display: block;
+        margin: 20px;
+    }
+    .imgsdiv{
+        img{
+            text-align: center;
+    }
+}
+.vacandetail{ 
+    ul {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
 }

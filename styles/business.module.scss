@@ -520,6 +520,7 @@
         border-radius: 50%;
         width: 100px;
         height: 100px;
+        display: inline;
     }
     h4 {
         color: #a0cd4e;
@@ -608,8 +609,138 @@
         padding-bottom: 0;
     }
 }
+ 
 
-
+@media(max-width:720px){
+    .head1{
+        display: grid;
+    }
+    .ontime{
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .contdiv{
+        display: grid;
+    }
+    .cont1div{
+        display: grid;
+    ul{
+        display: grid;
+    grid-template-columns: none;
+    padding: 25px;
+    }
+    }
+    .cont2div{
+        display: none;
+    }
+    .sectdiv{
+        display: grid;
+        padding: 0px;
+    }
+    .img1div{
+        display: none;
+    }
+    .sectdiv1{
+        width: 100%;
+        padding: 10px;
+        .keepyour{
+            padding: 20px;
+            gap: 20px;
+            ul{
+                padding: 0px;
+            }
+           p{
+            padding: 0px;
+            margin-top: 10px;
+           }
+        }
+    }
+    .awesome2{
+        margin-left: 10px;
+    }
+    .alldevdiv{
+        ul{
+            display: grid;
+           justify-content: left;
+           grid-template-columns: repeat(2,1fr);
+        }
+    }
+    .imagesdiv{
+        ul{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .imagediv{
+        display: none;
+    }
+    .financialdiv{
+          ul{
+            padding: 0px;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+          }
+    }
+    .videobook{
+        display: grid;
+    }
+    .video1{
+        padding: 20px;
+        width: 100%;
+    }
+    .appointment{
+        width: 100%;
+        padding: 10px;
+        form{
+            input{
+                font-size: 15px;
+            }
+            select{
+                font-size: 15px;
+            }
+            span{
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+    }
+    .expert{
+        display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .consultdiv{
+        display: grid;
+    }
+    .consult2{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .blogsdiv{
+        display: grid;
+        padding: 0px;
+        margin: 0px;
+    }
+    .logodiv{
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 20px;
+}
+    .achive{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px;
+        margin: 0px;
+    }
+    .allachive{
+        a{
+         font-size: 16px;
+         font-weight: 500;
+         padding-left: 25px;
+         padding-right: 25px;
+        }
+    }
+}
 
 
 
