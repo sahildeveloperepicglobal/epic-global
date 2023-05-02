@@ -1,15 +1,19 @@
 .officediv{
     display: flex;
-  padding: 100px; 
+  padding: 50px 100px; 
   gap: 50px;
 }
 .picdiv{
+    width: 50%;
     img{
         display: inherit;
+        border-radius: 10px;
     }
 }
 .contmain{
+    width: 50%;
     padding: 50px;
+    padding-left: 0;
 }
 .providiv{
     h6{
@@ -78,7 +82,7 @@ a{
 .bestdiv{
     display: flex;
     padding: 0 100px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .creativ{
     h2{
@@ -170,13 +174,6 @@ a{
             }
         }
 
-// @media (max-width:720px){
-//     .casestudy{
-//         display: grid !important;
-//         padding: 0;
-//         margin: 0;
-//     }
-// }
 
 .casestudy{
     display: flex;
@@ -185,7 +182,7 @@ a{
 }
 
 .casediv{
-    width: 50%;
+   flex: 1;
     padding: 50px;
     h2{
         font-size: 30px;
@@ -211,14 +208,14 @@ a{
       font-weight: 600;
        padding: 5px 25px;
        background-color: #fff;
-       color: #0e76bc;
+       color: #66394c;
        border: 1px solid #31506c;
     border-radius: 5px;
     transition: 0.6s;
     cursor: pointer;
        &:hover{
         transition: 0.6s;
-        box-shadow: (4px 0px 10px 0px);
+        box-shadow: (6px 0px 10px 2px);
     }
     }
     p{
@@ -226,7 +223,7 @@ a{
     }
 }
 .virtual{
-  width: 50%;
+ flex: 1;
   img{
     transform: rotate3d(0, 0, 0, 0deg);
     transition: 600ms;
@@ -237,4 +234,41 @@ a{
     }
   }
   
+}
+@media (max-width:1024px){
+     .contediv{
+        padding: 0;
+        margin: 0;
+     }
+}
+
+
+@media (max-width:720px){
+    
+    .casestudy{
+        display: grid;
+        padding: 0;
+        margin: 0;
+    }
+    .casediv{
+        padding: 5px;
+        margin: 0;
+    }
+    .virtual{
+        padding: 5px;
+        margin: 0;
+    }
+    .officediv{
+        display: grid;
+        padding: 0;
+        gap: 0;
+    }
+    .picdiv{
+        width: 100%;
+        padding: 0;
+    }
+    .contediv{
+        width: 100%;
+        padding: 0;
+    }
 }

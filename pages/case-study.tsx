@@ -4,8 +4,14 @@ import styles from "@/styles/home.module.scss";
 const CaseStudy = () => {
   return (
     <>
-      <section>
-        <div className="containers">
+      {/* <section>
+            <div className={styles.slidiv}>
+             
+            </div>
+          </section> */}
+
+      <div className="containers">
+        <section>
           <div className={styles.casestudy}>
             <div className={styles.casediv}>
               <h2> Case Study </h2>
@@ -23,6 +29,8 @@ const CaseStudy = () => {
               <img src="/Images/tradeIndia.png" alt="" />
             </div>
           </div>
+        </section>
+        <section>
           <div className={styles.casestudy}>
             <div className={styles.casediv}>
               <h2> Case Study </h2>
@@ -40,6 +48,8 @@ const CaseStudy = () => {
               <img src="/Images/bedsdivan.png" alt="" />
             </div>
           </div>
+        </section>
+        <section>
           <div className={styles.casestudy}>
             <div className={styles.casediv}>
               <h2> Case Study </h2>
@@ -57,8 +67,8 @@ const CaseStudy = () => {
               <img src="/Images/united shop.png" alt="" />
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </>
   );
 };
