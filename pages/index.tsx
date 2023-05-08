@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import styles from "@/styles/home.module.scss";
 import { Parallax, useParallax } from "react-scroll-parallax";
+import React from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,24 @@ export default function Home() {
     autoplay: true,
     autoplaySpeed: 5000,
   };
- 
+  const Settings = {
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+  };
+
+  const [read, setRead] = React.useState("Readmore");
+  const cliked = React.useCallback(() => {
+    if (read === "Readmore") {
+      setRead("Readless");
+    }
+    if (read === "Readless") {
+      setRead("Readmore");
+    }
+  }, [read]);
+
   return (
     <div className="wapper">
       <div className="bannerhome relative">
@@ -164,12 +182,11 @@ export default function Home() {
                     Affordability
                   </div>
                   <p className="text-base font-normal text-[#fff]">
-                    Epic global is a team of passionate, enthusiastic and
-                    perfectionist people, who are always on the go to provide
-                    the best possible solutions, products and services. Our
-                    projects are backed by an effective and efficient
-                    development agile methodology that employs sustainable
-                    processes designed for long
+                    In a cutting-edge environment we focus on ROI based
+                    solutions. We believe in offering solutions at right cost
+                    that is Customized and Tailored, through the process of
+                    Analysis, Design, Development, Implement and Support. We
+                    trust in offering affordable solutions for your business.
                   </p>
                 </div>
               </div>
@@ -187,12 +204,12 @@ export default function Home() {
                     Support System
                   </div>
                   <p className="text-base font-normal text-[#151515]">
-                    Epic global is a team of passionate, enthusiastic and
-                    perfectionist people, who are always on the go to provide
-                    the best possible solutions, products and services. Our
-                    projects are backed by an effective and efficient
-                    development agile methodology that employs sustainable
-                    processes designed for long
+                    Epic Global is a global organization providing cost
+                    effective solutions in Analytics and other domain areas. We
+                    have a team of experienced professionals who seamlessly
+                    blend with your business needs to deliver optimal
+                    technologies and processes, which considerably caters to the
+                    detailed requirements of organizations.
                   </p>
                 </div>
               </div>
@@ -201,6 +218,57 @@ export default function Home() {
         </div>
       </section>
 
+      {/* <section>
+         <div className={styles.agile}>
+          <img src="" />
+        <div className={styles.discdiv}>
+        <img
+                      src="./img/quality.png"
+                      className="w-14 h-14"
+                      alt="Quality & Agile Services"
+                    />
+          <h2>Quality & Agile Services</h2>
+          <p>
+            Epic global is a team of passionate, enthusiastic and perfectionist
+            people, who are always on the go to provide the best possible
+            solutions, products and services. Our projects are backed by an
+            effective and efficient development agile methodology that employs
+            sustainable processes designed for long
+          </p>
+        </div>
+        <div className={styles.discdiv1}>
+        <img
+                      src="./img/affordability.png"
+                      className="w-14 h-14"
+                      alt="Quality & Agile Services"
+                    />
+          <h2>Affordability</h2>
+          <p>
+            In a cutting-edge environment we focus on ROI based solutions. We
+            believe in offering solutions at right cost that is Customized and
+            Tailored, through the process of Analysis, Design, Development,
+            Implement and Support. We trust in offering affordable solutions for
+            your business.
+          </p>
+        </div>
+        <div className={styles.discdiv2}>
+        <img
+                      src="./img/support-system.png"
+                      className="w-14 h-14"
+                      alt="Quality & Agile Services"
+                    />
+          <h2>Support System</h2>
+          <p>
+            Epic Global is a global organization providing cost effective
+            solutions in Analytics and other domain areas. We have a team of
+            experienced professionals who seamlessly blend with your business
+            needs to deliver optimal technologies and processes, which
+            considerably caters to the detailed requirements of organizations.
+          </p>
+        </div>
+        </div>
+      </section> */}
+
       <div className="containers">
         <div className={styles.officediv}>
           <div className={styles.picdiv}>
@@ -208,15 +276,22 @@ export default function Home() {
           </div>
           <div className={styles.contmain}>
             <div className={styles.providiv}>
-              <h6>ABOUT US </h6>
-              <h2>Provide best Business Solution</h2>
+              <h6>CAREERS</h6>
+              <h2>Join a team with a mission.</h2>
               <h4>Since 2010</h4>
               <p>
-                <b>Businesx</b> always try to provide the best Business
-                Solutions for Clinets to grow up their Business very sharply and
-                smoothly. We voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt.
+                <b>At Epic-Global</b>, we seek talented professionals who are
+                passionate about technology and want to make a difference in the
+                world. We promote a culture of collaboration, growth, and
+                development, and value our employees as our most important
+                asset. We offer competitive salaries, benefits, and a variety of
+                career paths to fit your individual goals.From entry-level
+                positions to executive roles, we have a place for you at Epic
+                Global. We are always looking for individuals who share our
+                passion for technology and want to work in an environment of
+                collaboration, innovation, and growth. If you are interested in
+                joining our team, please contact us and we will be happy to
+                discuss potential opportunities.
               </p>
               <a>
                 More Details <span>{">>"}</span>{" "}
@@ -258,18 +333,15 @@ export default function Home() {
                 creative team
               </h1>
               <p>
-                <b>Businex</b> always try to provide the best Business Solutions
+                <b>Epic-</b> always try to provide the best Business Solutions
                 for Clients to grow up their Business sharp and smoothly. We
                 voluptatem voluptas aspernatur aut odit fugit, quia consequuur
                 magni dolores eos qui ratione.
               </p>
             </div>
+            {/* slider */}
             <div className={styles.sliddiv}>
-
-
-
-
-              <div className={styles.blogs1}>
+              {/* <div className={styles.blogs1}>
                 <img src="/Images/01.a0c47281.jpg" />
                 <div className={styles.blogs2}>
                   <h3>Larry Ellison</h3>
@@ -282,36 +354,35 @@ export default function Home() {
                     eget....
                   </p>
                 </div>
-              </div>
-              <div className={styles.blogs1}>
-                <img src="/Images/02.4817d3a8.jpg" />
-                <div className={styles.blogs2}>
-                  <h3>James Anderson</h3>
-                  <h5>HR & Admin</h5>
-                </div>
-                <div className={styles.paradiv}>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin tincidunt nunc lorem, nec faucibus mi facilisis
-                    eget....
-                  </p>
-                </div>
-              </div>
-              <div className={styles.blogs1}>
-                <img src="/Images/03.22822e24.jpg" />
-                <div className={styles.blogs2}>
-                  <h3>Thomas Nancy</h3>
-                  <h5>Software Engineer</h5>
-                </div>
-                <div className={styles.paradiv}>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin tincidunt nunc lorem, nec faucibus mi facilisis
-                    eget....
-                  </p>
-                </div>
-              </div>
-
+              </div> */}
+              {/* <div className={styles.blogs1}>
+                  <img src="/Images/02.4817d3a8.jpg" />
+                  <div className={styles.blogs2}>
+                    <h3>James Anderson</h3>
+                    <h5>HR & Admin</h5>
+                  </div>
+                  <div className={styles.paradiv}>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Proin tincidunt nunc lorem, nec faucibus mi facilisis
+                      eget....
+                    </p>
+                  </div>
+                </div> */}
+              {/* <div className={styles.blogs1}>
+                  <img src="/Images/03.22822e24.jpg" />
+                  <div className={styles.blogs2}>
+                    <h3>Thomas Nancy</h3>
+                    <h5>Software Engineer</h5>
+                  </div>
+                  <div className={styles.paradiv}>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Proin tincidunt nunc lorem, nec faucibus mi facilisis
+                      eget....
+                    </p>
+                  </div>
+                </div> */}
             </div>
           </div>
         </div>

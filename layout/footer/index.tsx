@@ -45,7 +45,7 @@ const Footer = () => {
                 </p>
 
                 <p className="text-[15px] text-base text-[#080b1a] ">
-                  © <b>2023 Epicglobal. All Rights Reserved.</b>
+                  © <b>2023 Epic Global Digital Solutions Pvt Ltd. All Rights Reserved.</b>
                 </p>
               </div>
             </div>

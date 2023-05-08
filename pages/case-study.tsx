@@ -11,7 +11,7 @@ const CaseStudy = () => {
           </section> */}
 
       <div className="containers">
-        <section>
+        <section className={styles.s1div}>
           <div className={styles.casestudy}>
             <div className={styles.casediv}>
               <h2> Case Study </h2>
@@ -30,7 +30,7 @@ const CaseStudy = () => {
             </div>
           </div>
         </section>
-        <section>
+        <section className={styles.s2div}>
           <div className={styles.casestudy}>
             <div className={styles.casediv}>
               <h2> Case Study </h2>
@@ -49,7 +49,7 @@ const CaseStudy = () => {
             </div>
           </div>
         </section>
-        <section>
+        <section className={styles.s3div}>
           <div className={styles.casestudy}>
             <div className={styles.casediv}>
               <h2> Case Study </h2>

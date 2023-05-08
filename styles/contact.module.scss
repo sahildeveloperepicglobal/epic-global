@@ -1,0 +1,155 @@
+// CONTACT US CONTAINER
+
+
+.headform{
+  margin: 50px 130px;
+  display: flex;
+  background-color: #ff6c6c;
+  gap: 20px;
+}
+.send{
+  flex: 2;
+  padding: 50px;
+  padding-top: 20px;
+  background-color: #fff;
+  h2{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  button{
+    padding: 15px 25px;
+    background-color: #ff6c6c;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+}
+
+.indiv{
+  display: flex;
+  justify-content: space-between;
+}
+.in1{
+  display: grid;
+  label{
+    color: rgb(53, 52, 52);
+    margin-top: 30px;
+  }
+  input{
+    border-bottom: 1px solid;
+    background-color: #fff;
+    font-size: 16px;
+    color: #000;
+    outline: none;
+    width: 280px;
+    margin-top: 10px;
+  }
+  input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+  }
+}
+.in2div{
+  display: flex;
+  justify-content: space-between;
+}
+.in3div{
+  display: grid;
+  label{
+    color: rgb(53, 52, 52);
+    margin-top: 30px;
+  }
+  textarea{
+    border-bottom: 1px solid;
+    background-color: #fff;
+    font-size: 16px;
+    color: #000;
+    outline: none;
+    margin-top: 10px;
+  }
+}
+
+.abtsec{
+  flex: 1;
+  padding: 20px;
+  color: #fff;
+  svg{
+    fill: #fff;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+.info{
+  h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+}
+.loct{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.phonediv{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.maildiv{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+ }
+
+
+
+ @media(max-width:1024px){
+  .headform{
+    display: grid;
+    padding: 0;
+    margin: 20px;
+  }
+ }
+
+
+
+ @media(max-width:540px){
+  .headform{
+    padding: 0;
+    margin: 0;
+    display: grid;
+  }
+  .send{
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 10px;
+  }
+  .indiv{
+    display: grid;
+    input{
+      width: fit-content;
+    }
+  }
+  .in2div{
+    display: grid;
+    input{
+      width: 100%;
+    }
+  }
+  .in3div{
+    textarea{
+      width: 100%;
+    }
+  }
+  .abtsec{
+    margin: 0;
+    padding: 10px;
+  }
+ }

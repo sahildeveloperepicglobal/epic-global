@@ -25,9 +25,11 @@
 .containers{
   padding: 0;
   margin: 0;
+
 }
 html {
   overflow-x: hidden;
+  /* overflow-y: hidden; */
 }
 
 body {
@@ -35,6 +37,10 @@ body {
   background: (rgb(var(--background-end-rgb)));
   font-family: "Poppins", sans-serif;
 }
+*{
+  max-width: inherit;
+}
+
 .scroll.header {
   position: fixed;
   background: #fff;
@@ -115,28 +121,3 @@ body {
 }
 
 
-
-
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  /* background: #fff; */
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}

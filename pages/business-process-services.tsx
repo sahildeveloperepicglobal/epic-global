@@ -7,7 +7,7 @@ const BusinessProcessServices = () => {
     <>
       <div className="text-[#fff]">
         <Breadcumb
-          content={` Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima in consequuntur`}
+          content={`Epic Global is a leading provider of Business Process Services (BPS). Our comprehensive suite of services covers the entire range of business needs.`}
           heading="Business Process Services"
         />
 
