@@ -12,7 +12,7 @@ const Business = () => {
     <div className="containers">
       <div className={Style.sectdiv}>
         <div className={Style.img1div}>
-          <img src="/bussinessimage/filler2-1-1.jpg" />
+          <img src="/Images/expert process.jpg" />
         </div>
         <div className={Style.sectdiv1}>
           <div className={Style.awesome2}>
@@ -73,12 +73,12 @@ const Business = () => {
           </div>
         </div>
       </div>
-      <div className="continers">
+      <section>
         <div className={Style.mpcdiv}>
           <section>
             <div className={Style.picmain}>
               <div className={Style.photodiv}>
-                <img src="/bussinessimage/filler2-1-1.jpg" />
+                <img src="/Images/we understand your need.jpg" />
               </div>
               <div className={Style.cont11div}>
                 <h2>How We Understand Your Needs?</h2>
@@ -122,7 +122,7 @@ const Business = () => {
                 </div>
               </div>
               <div className={Style.photodiv}>
-                <img src="/bussinessimage/blog-3-1.jpg" />
+                <img src="/Images/expert process.jpg" />
               </div>
             </div>
           </section>
@@ -177,7 +177,7 @@ const Business = () => {
             </div>
           </section>
         </div>
-      </div>
+      </section>
 
       <div className={Style.workdiv}>
         <p>We are Specialists</p>

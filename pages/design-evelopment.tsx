@@ -33,7 +33,7 @@ const DesignEvelopment = () => {
     <>
       <div>
         <Breadcumb
-          content={`We specialize in creating beautiful, effective, and user-friendly websites, applications, and other digital products. Our team of experienced professionals is equipped with the latest technologies and works collaboratively with our clients to ensure their satisfaction.`}
+          content={`We specialize in creating beautiful, effective, and user-friendly websites, applications, and other digital products.`}
           heading="Design Evelopment"
         />
       </div>

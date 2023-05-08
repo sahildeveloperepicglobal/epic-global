@@ -9,6 +9,7 @@ import Link from "next/link";
 import styles from "@/styles/home.module.scss";
 import { Parallax, useParallax } from "react-scroll-parallax";
 import React from "react";
+import CaseStudy from "./case-study";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -127,11 +128,11 @@ export default function Home() {
             backgroundPosition: "center center",
           }}
         >
-          <img src="/img/bg-image.png" ref={parallax.ref} alt="roundlogo" />
+          <img src="/img/bg-image.png" ref={Parallax.ref} alt="roundlogo" />
         </div>
       </section> */}
 
-      <section className="discoversection pt-10 pb-10">
+      {/* <section className="discoversection pt-10 pb-10">
         <div className="container mx-auto text-center">
           <div className="text-4xl font-semibold  text-[#151515] mb-4">
             Discover Epic Global
@@ -216,58 +217,71 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* <section>
-         <div className={styles.agile}>
-          <img src="" />
-        <div className={styles.discdiv}>
-        <img
-                      src="./img/quality.png"
-                      className="w-14 h-14"
-                      alt="Quality & Agile Services"
-                    />
-          <h2>Quality & Agile Services</h2>
-          <p>
-            Epic global is a team of passionate, enthusiastic and perfectionist
-            people, who are always on the go to provide the best possible
-            solutions, products and services. Our projects are backed by an
-            effective and efficient development agile methodology that employs
-            sustainable processes designed for long
-          </p>
-        </div>
-        <div className={styles.discdiv1}>
-        <img
-                      src="./img/affordability.png"
-                      className="w-14 h-14"
-                      alt="Quality & Agile Services"
-                    />
-          <h2>Affordability</h2>
-          <p>
-            In a cutting-edge environment we focus on ROI based solutions. We
-            believe in offering solutions at right cost that is Customized and
-            Tailored, through the process of Analysis, Design, Development,
-            Implement and Support. We trust in offering affordable solutions for
-            your business.
-          </p>
-        </div>
-        <div className={styles.discdiv2}>
-        <img
-                      src="./img/support-system.png"
-                      className="w-14 h-14"
-                      alt="Quality & Agile Services"
-                    />
-          <h2>Support System</h2>
-          <p>
-            Epic Global is a global organization providing cost effective
-            solutions in Analytics and other domain areas. We have a team of
-            experienced professionals who seamlessly blend with your business
-            needs to deliver optimal technologies and processes, which
-            considerably caters to the detailed requirements of organizations.
-          </p>
-        </div>
-        </div>
       </section> */}
+
+      <section>
+        <div className={styles.agile}>
+          <img src="" />
+          {/* <div className={styles.discdiv}>
+            <div className={styles.quadiv}>
+              <img
+                src="./img/quality.png"
+                className="w-14 h-14"
+                alt="Quality & Agile Services"
+              />
+              <h2>Quality & Agile Services</h2>
+            </div>
+            <div>
+              <p>
+                Epic global is a team of passionate, enthusiastic and
+                perfectionist people, who are always on the go to provide the
+                best possible solutions, products and services. Our projects are
+                backed by an effective and efficient development agile
+                methodology that employs sustainable processes designed for long
+              </p>
+            </div>
+          </div> */}
+          {/* <div className={styles.discdiv1}>
+            <div className={styles.quadiv}>
+              <img
+                src="./img/affordability.png"
+                className="w-14 h-14"
+                alt="Quality & Agile Services"
+              />
+              <h2>Affordability</h2>
+            </div>
+            <div>
+              <p>
+                In a cutting-edge environment we focus on ROI based solutions.
+                We believe in offering solutions at right cost that is
+                Customized and Tailored, through the process of Analysis,
+                Design, Development, Implement and Support. We trust in offering
+                affordable solutions for your business.
+              </p>
+            </div>
+          </div> */}
+          <div className={styles.discdiv2}>
+            <div className={styles.quadiv}>
+              <img
+                src="./img/support-system.png"
+                width="50px"
+                height="50px"
+              />
+              <h2>Support System</h2>
+            </div>
+            <div>
+              <p>
+                Epic Global is a global organization providing cost effective
+                solutions in Analytics and other domain areas. We have a team of
+                experienced professionals who seamlessly blend with your
+                business needs to deliver optimal technologies and processes,
+                which considerably caters to the detailed requirements of
+                organizations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div className="containers">
         <div className={styles.officediv}>
@@ -387,6 +401,11 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* <section>
+       CASE STUDY
+      </section> */}
+
       <section className="discoversection mt-5  pt-[50px] pb-[60px] bg-[#dfe3e796]">
         <div className="container mx-auto text-center">
           <div className="text-4xl font-semibold  text-[#151515] mb-4">
@@ -418,8 +437,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <section>{/* case study */}</section>
 
       <section className="portfolio   pt-[50px] pb-[60px] bg-[#fff]">
         <div className="container mx-auto text-center mb-[30px]">

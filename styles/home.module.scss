@@ -1,8 +1,8 @@
 .agile {
-    display: flex;
+    // display: flex;
     padding: 50px 100px;
     gap: 20px;
-   
+    background-image: url(/Images/DotCom_Banner_2880X1800.jpg);
 }
 .discdiv {
     flex: 1;
@@ -18,6 +18,12 @@
     p{
         color: #ffffffe3;
     }
+}
+.quadiv{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
 }
 .discdiv1 {
     flex: 1;
@@ -35,26 +41,29 @@
     }
 }
 .discdiv2 {
-    flex: 1;
     padding: 25px;
     border: 1px solid #fff;
-    background-image: url(/Images/DotCom_Banner_2880X1800.jpg);
+    border-radius: 20px;
+    background-color: #fff;
+    width: 500px;
+    height: auto;
+    opacity: .92;
     h2 {      
     font-size: 22px;
     font-weight: 500;
-    color: #ffffffe3;
+    color: black;
     margin-bottom: 5px;
     }
     p{
-        color: #ffffffe3;
+        color: black;
+        padding: 5px 20px 10px 5px;
     }
 }
 .officediv {
     display: flex;
     padding: 25px 100px;
-    gap: 50px;
+    gap: 40px;
 }
-
 .picdiv {
     flex: 1;
 
@@ -63,29 +72,22 @@
         border-radius: 10px;
     }
 }
-
 .contmain {
     flex: 1;
     padding: 50px;
     padding: 0;
     padding-left: 0;
 }
-
 .providiv {
     h6 {
         font-weight: 400;
         color: #151515;
-
     }
-
     h2 {
         font-size: 2rem;
         font-weight: 600;
-
-
         color: #000000eb;
     }
-
     h4 {
         color: #484848;
         display: inline-block;
@@ -96,7 +98,6 @@
         padding-right: 20px;
         margin-bottom: 15px;
     }
-
     h4::after {
         background-color: #b4b4b4;
         content: "";
@@ -108,7 +109,6 @@
         height: 2px;
         width: 110px;
     }
-
     p {
         color: #151515;
         font-size: .9375rem;
@@ -117,7 +117,6 @@
         word-spacing: 1px;
         letter-spacing: 0.5px;
     }
-
     a {
         color: #151515;
         font-size: 16px;
@@ -127,7 +126,6 @@
         margin-top: 15px;
         gap: 5px;
         cursor: pointer;
-
         span {
             font-size: 20px;
             letter-spacing: -5px;
@@ -138,34 +136,26 @@
         }
     }
 }
-
-
-
 .bestdiv {
     display: flex;
     padding: 0 100px;
-    margin-bottom: 50px;
+    margin: 40px 0px;
 }
-
 .creativ {
     h2 {
         font-weight: 500;
         line-height: 1;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
-
     p {
         color: #151515;
         font-size: .9375rem;
-
     }
 }
-
 .teamdiv {
     display: flex;
     align-items: center;
     margin-right: 50px;
-
     img {
         text-align: center;
         margin-right: 20px;
@@ -174,25 +164,21 @@
         width: 50px;
     }
 }
-
 .bgdiv {
     background-image: url(/Images/team-bg.2a1a1143.jpg);
     width: 100%;
     height: auto;
 }
-
 .great {
     display: flex;
     color: #fff;
     padding: 80px;
 }
-
 .contediv {
    flex: 1;
     color: #bbb;
     position: relative;
     padding-top: 50px;
-
     h3 {
         color: #fff;
         margin-bottom: 13px;
@@ -200,7 +186,6 @@
         text-transform: uppercase;
         font-size: 1rem;
     }
-
     h1 {
         color: #fff;
         font-size: 2.25rem;
@@ -209,7 +194,6 @@
         margin-bottom: 18px;
         line-height: 46px;
     }
-
     p {
         // color: #fff;
         font-size: .9375rem;
@@ -219,16 +203,13 @@
         padding: 0 60px 0 0;
     }
 }
-
 .sliddiv {
    flex: 1;
     align-items: center;
 }
-
 .blogs1 {
     text-align: center;
 }
-
 .blogs2 {
     line-height: 30px;
     background-color: white;
