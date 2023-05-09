@@ -18,7 +18,7 @@
         left: -15px;
         right: 0;
         bottom: -15px;
-        box-shadow: -17px 16px 0px 0px rgb(163, 40, 57);
+        box-shadow: -10px 10px 4px 4px rgb(163, 40, 57);
         width: 100%;
     }
 }
@@ -221,7 +221,7 @@
     position: relative;
     top: 75;
     left: -75px;
-    opacity: 1;
+   
     h2 {
         line-height: 30px;
         font-size: 28px;
@@ -387,7 +387,7 @@
 // Responsive on 720px
 
 
-@media(max-width:720px) {
+@media(max-width:768px) {
     .head1 {
         display: grid;
     }
@@ -450,7 +450,7 @@
 
         p {
             padding: 0px;
-            margin-top: 10px;
+            // margin-top: 10px;
         }
     }
 
@@ -659,6 +659,7 @@
         display: grid;
         padding: 0;
         margin: 5px;
+        margin-top: 20px;
     }
 
     .whyimg {
@@ -671,4 +672,79 @@
 
         }
     }
+}
+
+@media(max-width:1024px){
+    .sectdiv{
+        margin: auto;
+        padding: 25px;
+    }
+    .img1div::before{
+        display: none;
+    }
+    .sectdiv1{
+        padding: 0px;
+        margin: 0;
+    }
+    .awesome2{
+        margin: 0px 20px;
+        padding: 0px 15px;
+    }
+    .keepyour{
+        margin: 0;
+        padding: 0;
+        ul{
+            padding: 20px;
+            gap: 15px 20px;
+        }
+    }
+    .picmain{
+        margin: 0;
+        padding: 10px 2px;
+        display: grid;
+    }
+    .pic1main{
+        margin: 0;
+        padding: 10px 2px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .photodiv{
+        display: none;
+    }
+    
+        .cont11div {
+            background: #fff;
+            color: black;
+            position: inherit;
+    
+            h2 {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
+                padding: 0;
+                margin-bottom: 5px;
+            }
+        }
+        .cont12div {
+           
+            background: #fff;
+            color: black;
+            position: inherit; 
+            h2 {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
+                padding: 0;
+                margin-bottom: 5px;
+            }
+        }
+         .imagediv{
+            display: none;
+         }
+        .financialdiv{
+            padding: 0;
+            margin: 0;
+        }
+    
 }

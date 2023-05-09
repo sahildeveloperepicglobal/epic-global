@@ -267,6 +267,7 @@ export default function Home() {
                 width="50px"
                 height="50px"
               />
+              
               <h2>Support System</h2>
             </div>
             <div>

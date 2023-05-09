@@ -138,8 +138,10 @@
 }
 .bestdiv {
     display: flex;
-    padding: 0 100px;
-    margin: 40px 0px;
+    padding: 0px 80px;
+    margin: 20px 0px;
+    gap: 20px;
+    margin-bottom: 40px;
 }
 .creativ {
     h2 {
@@ -154,8 +156,13 @@
 }
 .teamdiv {
     display: flex;
+    padding: 20px;
     align-items: center;
-    margin-right: 50px;
+    // border: 1px solid #fff;
+    transition: 0.5s;
+        &:hover{
+            box-shadow: #ff6c6c(0px 1px 14px 2px);
+        }
     img {
         text-align: center;
         margin-right: 20px;
@@ -305,7 +312,10 @@
 
 }
 
+
+// CASE STUDY 
 // fade out fade in
+
 .s1div,
 .s2div,
 .s3div {
@@ -391,26 +401,56 @@
 
 @media (max-width:1024px) {
     .contediv {
-        padding: 0;
+        padding: 12px;
         margin: 0;
         position: inherit;
+    }
+    .officediv{
+        flex-direction: column;
+        padding: 30px;
+        gap: 20px;
+    }
+    .bestdiv{
+        padding: 30px;
+        margin: 0;
+        gap: 10px;
+    }
+    .teamdiv{
+        margin: 0;
+        padding: 10px;
+        border: 1px solid #fff;
+        &:hover{
+            box-shadow: #ff6c6c(0px 1px 14px 2px);
+        }
     }
 }
 
 
-@media (max-width:720px) {
-
+@media (max-width:768px) {
+    .contediv {
+        padding: 12px;
+        margin: 0;
+        position: inherit;
+    }
+    .agile{
+        margin: 0;
+        padding: 0;
+    }
+    .discdiv2{
+        margin: 0;
+        padding: 10px;
+        border-radius: inherit;
+        width: inherit;
+    }
     .casestudy {
         display: grid;
         padding: 0;
         margin: 0;
     }
-
     .casediv {
         padding: 5px;
         margin: 0;
     }
-
     .virtual {
         padding: 5px;
         margin: 0;
@@ -419,27 +459,23 @@
         margin: 6px;
         padding: 0;
     }
-
     .officediv {
         display: grid;
         padding: 0;
         gap: 0;
     }
-
     .picdiv {
         width: 100%;
         padding: 0;
     }
-
     .contmain {
         padding: 0;
         margin: 6px;
     }
-
     .bestdiv {
         display: grid;
         padding: 10px;
-        gap: 6px;
+        gap: 20px;
     }
     .great{
         display: grid;
