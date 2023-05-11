@@ -1,15 +1,12 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/no-unescaped-entities */
-
+/* eslint-disable react/no-unescaped-entities */  
 import Style from "styles/contact.module.scss";
 
 const ContactUs = () => {
-  
-  const Handlesubmit={
+  const Handlesubmit = {};
 
-  }
-  
   return (
     <>
       <div className={Style["aboutus"]}>
@@ -22,7 +19,7 @@ const ContactUs = () => {
                   <div className={Style.indiv}>
                     <div className={Style.in1}>
                       <label htmlFor="Name">Name *</label>
-                      <input type="text" placeholder="Your name"/>
+                      <input type="text" placeholder="Your name" />
                     </div>
                     <div className={Style.in1}>
                       <label htmlFor="Email">Email *</label>
@@ -32,7 +29,7 @@ const ContactUs = () => {
                   <div className={Style.in2div}>
                     <div className={Style.in1}>
                       <label htmlFor="Phone">Phone *</label>
-                      <input type="number" placeholder="Your number"/>
+                      <input type="number" placeholder="Your number" />
                     </div>
                     <div className={Style.in1}>
                       <label htmlFor="Company">Company</label>
@@ -40,13 +37,17 @@ const ContactUs = () => {
                     </div>
                   </div>
                   <div className={Style.in3div}>
-                    <label htmlFor="Message" >Message *</label>
-                    <textarea name="Write your message" id="" cols={10} rows={5} placeholder={"Write your message"}></textarea>
+                    <label htmlFor="Message">Message *</label>
+                    <textarea
+                      name="Write your message"
+                      id=""
+                      cols={10}
+                      rows={5}
+                      placeholder={"Write your message"}
+                    ></textarea>
                   </div>
                 </form>
-                <button onClick={(e)=>Handlesubmit}>
-                  SEND MESSAGE
-                  </button>
+                <button onClick={(e) => Handlesubmit}>SEND MESSAGE</button>
               </div>
               <div className={Style.abtsec}>
                 <div className={Style.info}>
@@ -94,6 +95,53 @@ const ContactUs = () => {
                     </svg>
                   </span>
                   <a href="">gmail@example.com</a>
+                </div>
+                <div className={Style.social}>
+                  
+                    <div className="container mt-44 flex justify-end align-top">
+                      <ul className="flex gap-5">
+                        <li className="border-b border-[#5a5858] pb-2 hover:!border-[#fff]">
+                          <a href="/">
+                            {" "}
+                            <img
+                              src="./svg/facebook.svg"
+                              alt="facebook"
+                              className="h-5 w-5"
+                            />
+                          </a>
+                        </li>
+                        <li className="border-b border-[#5a5858] pb-2 hover:border-[#fff]">
+                          <a href="/">
+                            {" "}
+                            <img
+                              src="./svg/instagram.svg"
+                              alt="instagram"
+                              className="h-5 w-5"
+                            />{" "}
+                          </a>
+                        </li>
+                        <li className="border-b border-[#5a5858] pb-2 hover:border-[#fff]">
+                          <a href="/">
+                            {" "}
+                            <img
+                              src="./svg/linkedin.svg"
+                              alt="twitter"
+                              className="h-5 w-5"
+                            />
+                          </a>
+                        </li>
+                        <li className="border-b border-[#5a5858] pb-2 hover:border-[#fff]">
+                          <a href="/">
+                            <img
+                              src="./svg/pinterest.svg"
+                              alt="linkedin"
+                              className="h-5 w-5"
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                 
                 </div>
               </div>
             </div>

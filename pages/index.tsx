@@ -34,6 +34,7 @@ export default function Home() {
   };
 
   const [read, setRead] = React.useState("Readmore");
+  
   const cliked = React.useCallback(() => {
     if (read === "Readmore") {
       setRead("Readless");
@@ -302,14 +303,14 @@ export default function Home() {
                 asset. We offer competitive salaries, benefits, and a variety of
                 career paths to fit your individual goals.From entry-level
                 positions to executive roles, we have a place for you at Epic
-                Global. We are always looking for individuals who share our
+                Global.<span>{read==="Readless" && <span> We are always looking for individuals who share our
                 passion for technology and want to work in an environment of
                 collaboration, innovation, and growth. If you are interested in
                 joining our team, please contact us and we will be happy to
-                discuss potential opportunities.
+                discuss potential opportunities.</span>} <a onClick={cliked}>{read}</a></span>
               </p>
               <a>
-                More Details <span>{">>"}</span>{" "}
+                More Details <span>{">>"}</span>
               </a>
             </div>
           </div>
