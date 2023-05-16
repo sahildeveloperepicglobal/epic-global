@@ -109,7 +109,6 @@
  }
 
 
-
  @media(max-width:1024px){
   .headform{
     display: grid;
@@ -120,7 +119,7 @@
 
 
 
- @media(max-width:468px){
+ @media(max-width:768px){
   .headform{
     padding: 0;
     margin: 0;
@@ -132,13 +131,11 @@
     padding-bottom: 10px;
   }
   .indiv{
-    display: grid;
     input{
       width: fit-content;
     }
   }
   .in2div{
-    display: grid;
     input{
       width: 100%;
     }
@@ -153,3 +150,26 @@
     padding: 10px;
   }
  }
+
+
+ // Responsive on 429 px
+ @media(max-width:429px){
+  .headform{
+    justify-content: center;
+    form{
+      justify-items: center;
+    }
+  }
+ .indiv{
+  display: grid;
+  input{
+    width: 100%;
+  }
+ }
+ .in2div{
+  display: grid;
+  input{
+    width: 100%;
+  }
+ }
+}

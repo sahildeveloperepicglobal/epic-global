@@ -116,6 +116,19 @@
         line-height: 1.6;
         word-spacing: 1px;
         letter-spacing: 0.5px;
+        span {
+            a{
+                color: #ff6c6c !important;
+                margin-left: 5px;
+                transition: 0.5s;
+                cursor: pointer;
+                display: inherit;
+                width: 88px;
+                &:hover{
+                    border-bottom: 1px solid;
+                     }
+            }
+        }
     }
     a {
         color: #151515;
