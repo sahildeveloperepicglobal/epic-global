@@ -262,12 +262,8 @@ export default function Home() {
           </div> */}
           <div className={styles.discdiv2}>
             <div className={styles.quadiv}>
-              <img
-                src="./img/support-system.png"
-                width="50px"
-                height="50px"
-              />
-              
+              <img src="./img/support-system.png" width="50px" height="50px" />
+
               <h2>Support System</h2>
             </div>
             <div>
@@ -356,7 +352,7 @@ export default function Home() {
             </div>
             {/* slider */}
             <div className={styles.sliddiv}>
-              {/* <div className={styles.blogs1}>
+              <div className={styles.blogs1}>
                 <img src="/Images/01.a0c47281.jpg" />
                 <div className={styles.blogs2}>
                   <h3>Larry Ellison</h3>
@@ -369,7 +365,7 @@ export default function Home() {
                     eget....
                   </p>
                 </div>
-              </div> */}
+              </div>
               {/* <div className={styles.blogs1}>
                   <img src="/Images/02.4817d3a8.jpg" />
                   <div className={styles.blogs2}>
@@ -453,7 +449,7 @@ export default function Home() {
 
         <div className="container  mx-auto  ">
           <div className="flex justify-center">
-            <div className=" w-10/12 flex flex-wrap  gap-5 justify-center">
+            <div className=" w-12/12 flex flex-wrap  gap-5 justify-center">
               {portfolio.map((items) => (
                 <div key={items.id} className=" w-1/1 mb-2  ">
                   <div className="box      rounded-[10px]">
